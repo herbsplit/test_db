@@ -8,8 +8,8 @@ html
     p
     table.table 
       tr 
-        th name 
-        th unit 
+        each item in headers
+          th= item.name 
       tbody 
           each item in data
             tr

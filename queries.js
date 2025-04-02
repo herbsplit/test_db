@@ -18,7 +18,7 @@ const getAllItems = (req, res) => {
             throw err;
         }
         console.log(result.rows)
-        res.render('table-template', {data: result.rows, headers: result.fields})
+        res.render('table-template', {data: result.rows, headers: result.fields.slice(1)})
     });
 }
 
