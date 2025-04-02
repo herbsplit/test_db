@@ -1,0 +1,18 @@
+//- template.pug
+doctype html
+html
+  head
+    title My Pug Page
+  body
+    h1 pug wee 
+    p
+    table.table 
+      tr 
+        th name 
+        th unit 
+      tbody 
+          each item in data
+            tr
+              td= item.name
+              td= item.unit 
+    block content

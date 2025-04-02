@@ -17,8 +17,8 @@ const getAllItems = (req, res) => {
         if (err) {
             throw err;
         }
-
-        res.status(200).json(result.rows);
+        console.log(result.rows)
+        res.render('table-template', {data: result.rows, headers: result.fields})
     });
 }
 

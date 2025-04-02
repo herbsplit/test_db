@@ -5,6 +5,8 @@ const itemController = require("./queries");
 const app = express();
 const port = 5000
 
+app.set('view engine', 'pug');
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
